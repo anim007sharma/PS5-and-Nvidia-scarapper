@@ -18,8 +18,10 @@ module.exports = {
   urlFlipkart: urlFlipkart,
   urlAmazon: urlAmazon,
   urlGamesTheShop: urlGamesTheShop,
+  urlReliance: urlReliance,
   url3060TiRptech: url3060TiRptech,
   url3070Rptech: url3070Rptech,
   url3080Rptech: url3080Rptech,
   url3090Rptech: url3090Rptech,
+  urlSony: urlSony,
 };

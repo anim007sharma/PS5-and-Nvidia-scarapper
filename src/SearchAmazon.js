@@ -1,4 +1,5 @@
 const { sleep } = require("./utils.js");
+const { sendEmailNotification } = require("./SendEmailNotification");
 const { urlAmazon } = require("./config.js");
 async function searchAmazon(browser) {
   const context = await browser.newContext();
@@ -11,6 +12,7 @@ async function searchAmazon(browser) {
     console.log("Out of Stock");
   } else {
     console.log("In Stock");
+    await sendEmailNotification("PS5", urlAmazon);
   }
   await context.close();
 }

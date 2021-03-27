@@ -4,7 +4,7 @@
  * TODO: Add Support for Sony (PS5)
  * TODO: Add Support for notification (SMS and Email)
  */
-
+const nodemailer = require("nodemailer");
 const { firefox } = require("playwright");
 // const cron = require("node-schedule");
 // const nodemailer = require("nodemailer");
@@ -25,7 +25,15 @@ async function configureBrowser() {
   await searchSony(browser);
   // browser.close();
 }
-
+async function sendNotification() {
+  let transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: "anim786sharma@gmail.com",
+      pass: "W@ter007",
+    },
+  });
+}
 // const start = () => {
 //   let job = cron.scheduleJob("*/15 * * * * *", function () {
 //     configureBrowser();

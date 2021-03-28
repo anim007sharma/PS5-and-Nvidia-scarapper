@@ -6,4 +6,4 @@ Currently supporting Amazon, Sony, Flipkart, RPtech, GamesTheShop.
 
 ## Development Changes
 
-Local changes done here.
+Changes as per my local dev.

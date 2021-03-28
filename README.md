@@ -12,6 +12,6 @@ Did My local changes
 
 Production changes done here.
 
-## Qualti Changes
+## Quality Changes
 
 Quality changes goes here.
